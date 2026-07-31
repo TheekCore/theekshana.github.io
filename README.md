@@ -83,5 +83,41 @@ I currently have no centralized, professional platform to present my skills, edu
 - [ ] Week 3: Test, deploy, finalize SAD report
 
 ---
+## 9. Use-Case Diagram & Descriptions
+
+**Actors:** Visitor/Recruiter (primary)
+
+**Use cases modeled:** View Home Page, View Profile Info (About/Education/Skills), View Projects, View/Download CV, Navigate via Menu, View Contact Links.
+
+![Use-Case Diagram](./Src/drawIOusecase.png)
+
+### Brief Use-Case Descriptions
+
+| Use Case | Description |
+|---|---|
+| **View Home Page** | The visitor lands on the site and sees the name, title and short introduction. *Precondition:* site is deployed. *Postcondition:* visitor understands who the portfolio belongs to. |
+| **View Profile Info** | The visitor browses About, Education and Skills to learn the owner's background. *Precondition:* content is published. *Postcondition:* visitor has a clear picture of qualifications. |
+| **View Projects** | The visitor reviews at least three projects with problem, contribution, tools and links. *Precondition:* projects are added with screenshots/links. *Postcondition:* visitor can judge practical ability. |
+| **View/Download CV** | The visitor opens the CV section and can view it inline or download the PDF. *Precondition:* CV file is uploaded. *Postcondition:* CV is displayed or downloaded. |
+| **Navigate via Menu** | The visitor uses the navigation bar to jump between sections at any time. *Precondition:* nav menu is present on every view. *Postcondition:* visitor reaches the intended section. |
+| **View Contact Links** | The visitor finds a professional email and links to LinkedIn/GitHub. *Precondition:* links are valid. *Postcondition:* visitor can reach out or view external profiles. |
+
+## 10. Activity Diagram — "Visitor Finds and Downloads CV"
+
+Models the key flow of a recruiter locating and retrieving the CV:
+
+**Start → Visitor lands on Home → Clicks navigation menu → Selects "CV" section → Page loads CV preview → Decision: "View inline or download?" → (View path: displays CV inline / Download path: downloads PDF file) → End**
+
+This flow was chosen because retrieving the CV is the single most important action a recruiter takes on the site, making it the clearest candidate for activity modeling.
+
+![Activity Diagram](./Src/drawIoactivity_diagram.png)
+
+## 11. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [ ] Week 1, Day 6: Site map & wireframes
+- [ ] Week 2: Build and style the site
+- [ ] Week 3: Test, deploy, finalize SAD report
 
 *This README will be updated as the project progresses through each SAD stage.*
