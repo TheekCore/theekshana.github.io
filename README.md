@@ -152,4 +152,41 @@ Full page design created and iterated in Figma, covering Hero, Education, Projec
 - [ ] Week 2: Build and style the site (HTML/CSS/JS)
 - [ ] Week 3: Test, deploy, finalize SAD report
 
+## 14. Implementation — Day 1: Design Tokens & Base Styles
+
+Development began by scaffolding the single-page site and establishing a design-token
+layer before any section markup, so every later section pulls from one consistent
+source of truth for color, type and spacing.
+
+**What was built:**
+- Bare `index.html` skeleton (doctype, meta tags, title, empty body)
+- CSS custom properties (`:root` tokens) for background, accent, and text colors
+- Global reset, `::selection` styling, and visible keyboard focus states
+- Type scale using Sora (display), Inter (body) and JetBrains Mono (labels/tags)
+- Reusable utility classes: `.eyebrow`, `.section-title`, `.container`, `.section`
+
+**Note on palette:** the current tokens use a violet/cyan/amber accent system rather
+than the single teal-blue accent described in section 12's Design Decisions. This will
+be reconciled before final submission — either the report text or the token values will
+be updated so both agree.
+
+**Requirements addressed:** groundwork for NFR3 (accessible font sizes, contrast, focus
+visibility) — no functional requirements yet, as no sections exist to navigate.
+
+**Commit:** `02e74cf` — *feat: base design tokens, reset and typography*
+
+## 15. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [x] Week 2, Day 1: Project scaffold, design tokens and base styles
+- [ ] Week 2, Day 2: Navigation bar and hero section
+- [ ] Week 2, Day 3: About, Education and Skills sections
+- [ ] Week 2, Day 4: Projects and Experience & Activities sections
+- [ ] Week 2, Day 5: CV and Contact sections, footer
+- [ ] Week 2, Day 6: Animations and interactivity
+- [ ] Week 2, Day 7: CV asset added, content complete
+- [ ] Week 3: Test, deploy, finalize SAD report
+
 *This README will be updated as the project progresses through each SAD stage.*
