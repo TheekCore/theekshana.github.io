@@ -112,12 +112,44 @@ This flow was chosen because retrieving the CV is the single most important acti
 
 ![Activity Diagram](./Src/drawIoactivity_diagram.png)
 
+
 ## 11. Roadmap (updated)
 
 - [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
 - [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
 - [ ] Week 1, Day 6: Site map & wireframes
 - [ ] Week 2: Build and style the site
+- [ ] Week 3: Test, deploy, finalize SAD report
+
+
+## 12. Site Map & Wireframes
+
+Since the portfolio is built as a single-page site with anchor-based navigation, the site map below shows the structure as sections under one Home page rather than separate URLs.
+
+### Site Map
+![Site Map](./Src/sitemap.drawio.png)
+
+### Wireframes / High-Fidelity Design
+
+Full page design created and iterated in Figma, covering Hero, Education, Projects, Skills, Activities and Contact sections.
+
+- **Figma file:** [Portfolio Design](https://www.figma.com/design/2VLEdwVC5jB3BD1y5zpfAK/Theekshana-Portfolio-%E2%80%94-UI-Design---Wireframes?node-id=1-2&t=G00SFYDofY2HdcVw-1)
+- Color palette derived directly from the hero photo (teal-blue accent, RGB ≈ 25, 135, 182) and applied consistently across buttons, section underlines, icons and progress bars for visual cohesion.
+
+![Wireframe Preview](./Src/Wireframes-Portfolio.png)
+
+### Design Decisions
+
+- Single-page layout with anchor navigation was chosen over multi-page for simplicity and faster load times, appropriate for a portfolio of this scope.
+- A consistent teal-blue accent color (matched to the hero photo) was applied site-wide to create a cohesive visual identity rather than disconnected section colors.
+- Education is presented in two complementary formats — quick-reference cards near the top and a detailed timeline lower down — to balance scannability with depth.
+
+## 13. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [ ] Week 2: Build and style the site (HTML/CSS/JS)
 - [ ] Week 3: Test, deploy, finalize SAD report
 
 *This README will be updated as the project progresses through each SAD stage.*
