@@ -189,4 +189,32 @@ visibility) — no functional requirements yet, as no sections exist to navigate
 - [ ] Week 2, Day 7: CV asset added, content complete
 - [ ] Week 3: Test, deploy, finalize SAD report
 
+## 16. Implementation — Day 2: Navigation Bar & Hero Section
+
+**What was built:**
+- Fixed glass navigation bar with logo, section links and a mobile hamburger button
+- Hero section: role eyebrow text, name headline, short lead paragraph, two CTA buttons
+- Hero visual: circular profile-photo frame with a glowing gradient ring
+- Animated gradient-blob background and subtle grain overlay behind the hero
+
+**Requirements addressed:**
+- FR1 — name, title and introduction now display on the Home/hero view
+- FR2 — navigation menu present and linking to every planned section anchor
+
+**Commit:** `2d785eb` — *feat: animated background, glassmorphism cards, nav and hero section*
+
+## 17. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [x] Week 2, Day 1: Project scaffold, design tokens and base styles
+- [x] Week 2, Day 2: Navigation bar and hero section
+- [ ] Week 2, Day 3: About, Education and Skills sections
+- [ ] Week 2, Day 4: Projects and Experience & Activities sections
+- [ ] Week 2, Day 5: CV and Contact sections, footer
+- [ ] Week 2, Day 6: Animations and interactivity
+- [ ] Week 2, Day 7: CV asset added, content complete
+- [ ] Week 3: Test, deploy, finalize SAD report
+
 *This README will be updated as the project progresses through each SAD stage.*
