@@ -217,4 +217,31 @@ visibility) — no functional requirements yet, as no sections exist to navigate
 - [ ] Week 2, Day 7: CV asset added, content complete
 - [ ] Week 3: Test, deploy, finalize SAD report
 
+## 18. Implementation — Day 3: About, Education & Skills Sections
+
+**What was built:**
+- About Me: summary card, interest chip cloud, and a separate Career Objective card
+- Education: single timeline card with year range, degree, coursework and highlights
+- Skills: technical-skill progress bars alongside a soft-skill pill chip cloud
+
+**Requirements addressed:**
+- FR6 — education, skills and experience information now displayed clearly
+  (experience itself lands Day 4, alongside projects)
+
+**Commit:** `c466d95` — *feat: about, education and skills sections*
+
+## 19. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [x] Week 2, Day 1: Project scaffold, design tokens and base styles
+- [x] Week 2, Day 2: Navigation bar and hero section
+- [x] Week 2, Day 3: About, Education and Skills sections
+- [ ] Week 2, Day 4: Projects and Experience & Activities sections
+- [ ] Week 2, Day 5: CV and Contact sections, footer
+- [ ] Week 2, Day 6: Animations and interactivity
+- [ ] Week 2, Day 7: CV asset added, content complete
+- [ ] Week 3: Test, deploy, finalize SAD report
+
 *This README will be updated as the project progresses through each SAD stage.*
