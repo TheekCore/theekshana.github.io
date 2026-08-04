@@ -461,6 +461,128 @@ header{
   transform:translateY(0);
 }
 
+/* ============ ABOUT ============ */
+.about-grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr;
+  gap:2.5rem;
+  align-items:start;
+}
+.about-card{padding:2.2rem;}
+.about-card p + p{margin-top:1rem;}
+.about-card p{color:var(--text-1);}
+.chip-cloud{
+  display:flex; flex-wrap:wrap; gap:0.6rem;
+  margin-top:1.5rem;
+}
+.chip{
+  font-family:var(--font-mono);
+  font-size:0.78rem;
+  padding:0.45rem 0.9rem;
+  border-radius:100px;
+  border:1px solid var(--glass-border);
+  color:var(--text-1);
+  transition:all .25s ease;
+}
+.chip:hover{
+  border-color:var(--cyan);
+  color:#fff;
+  transform:translateY(-2px);
+}
+.objective-card{
+  padding:2.2rem;
+  background:linear-gradient(160deg, rgba(124,108,246,0.12), rgba(53,208,232,0.06));
+  height:100%;
+}
+.objective-card h3{font-size:1.15rem; margin-bottom:0.9rem;}
+.objective-card p{color:var(--text-1); font-size:0.98rem;}
+
+/* ============ EDUCATION ============ */
+.edu-card{
+  padding:2.4rem;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:2rem;
+}
+.edu-year{
+  font-family:var(--font-mono);
+  color:var(--cyan);
+  font-size:0.85rem;
+  white-space:nowrap;
+  border-right:1px solid var(--glass-border);
+  padding-right:2rem;
+}
+.edu-year strong{display:block; color:#fff; font-size:1rem; margin-bottom:0.3rem;}
+.edu-body h3{font-size:1.3rem; margin-bottom:0.3rem;}
+.edu-body .school{color:var(--violet-soft); font-weight:600; margin-bottom:1rem; display:block;}
+.edu-cols{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;
+  margin-top:1.2rem;
+}
+.edu-cols h4{
+  font-family:var(--font-mono);
+  font-size:0.75rem;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--text-2);
+  margin-bottom:0.8rem;
+}
+.check-list li{
+  display:flex; gap:0.6rem;
+  color:var(--text-1);
+  font-size:0.92rem;
+  margin-bottom:0.6rem;
+}
+.check-list li::before{
+  content:'✓';
+  color:var(--cyan);
+  font-weight:700;
+}
+
+/* ============ SKILLS ============ */
+.skills-grid{
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:2rem;
+}
+.skill-panel{padding:2.2rem;}
+.skill-panel h3{font-size:1.1rem; margin-bottom:1.3rem;}
+.skill-bars{display:flex; flex-direction:column; gap:1.1rem;}
+.skill-row{display:flex; flex-direction:column; gap:0.4rem;}
+.skill-row .label{
+  display:flex; justify-content:space-between;
+  font-size:0.88rem; color:var(--text-1);
+  font-family:var(--font-mono);
+}
+.skill-track{
+  height:6px; border-radius:100px;
+  background:rgba(255,255,255,0.07);
+  overflow:hidden;
+}
+.skill-fill{
+  height:100%; border-radius:100px;
+  background:linear-gradient(90deg, var(--violet), var(--cyan));
+  width:0%;
+  transition:width 1.4s cubic-bezier(.2,.8,.2,1);
+}
+.soft-cloud{display:flex; flex-wrap:wrap; gap:0.7rem;}
+.soft-chip{
+  padding:0.6rem 1.1rem;
+  border-radius:100px;
+  font-size:0.85rem;
+  border:1px solid var(--glass-border);
+  color:var(--text-1);
+  transition:all .3s ease;
+}
+.soft-chip:hover{
+  background:rgba(124,108,246,0.15);
+  border-color:var(--violet);
+  color:#fff;
+  transform:translateY(-3px) rotate(-1deg);
+}
+
 </style>
 </head>
 <body>
@@ -528,6 +650,110 @@ header{
     </div>
   </div>
   <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow reveal">// About</div>
+    <h2 class="section-title reveal">The person behind the pixels</h2>
+    <p class="section-sub reveal">A quick introduction to who I am, what drives me, and where I want to go.</p>
+    <div class="about-grid">
+      <div class="glass about-card reveal">
+        <p>I'm Theekshana Thathsara, a Bachelor of Information Communication Technology (Hons) undergraduate at the University of Vavuniya. I'm passionate about creating user-centered digital experiences and building software that combines functionality with thoughtful design.</p>
+        <p>My interests span UI/UX design, web development, software engineering, and emerging technologies. Through academic projects and self-directed learning, I've developed skills in front-end development, Java programming, C# application development, and interface design.</p>
+        <p>I enjoy solving problems, learning new technologies, and collaborating with others to build meaningful digital products.</p>
+        <div class="chip-cloud">
+          <span class="chip">UI/UX Design</span>
+          <span class="chip">Web Development</span>
+          <span class="chip">Software Engineering</span>
+          <span class="chip">Front-End Development</span>
+          <span class="chip">Emerging Technologies</span>
+        </div>
+      </div>
+      <div class="glass objective-card reveal">
+        <h3>Career Objective</h3>
+        <p>To become a skilled UI/UX and Full-Stack Developer capable of designing innovative, accessible, and impactful software solutions that improve user experiences and solve real-world problems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="eyebrow reveal">// Education</div>
+    <h2 class="section-title reveal">Academic background</h2>
+    <p class="section-sub reveal">Where the foundations of this portfolio's skills are being built.</p>
+    <div class="glass edu-card reveal">
+      <div class="edu-year">
+        <strong>2022 — Present</strong>
+        Expected graduation: 2028
+      </div>
+      <div class="edu-body">
+        <h3>Bachelor of Information Communication Technology (Hons)</h3>
+        <span class="school">University of Vavuniya</span>
+        <div class="edu-cols">
+          <div>
+            <h4>Relevant Coursework</h4>
+            <ul class="check-list">
+              <li>System Analysis &amp; Design</li>
+              <li>Object Oriented Programming</li>
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Database Systems</li>
+              <li>Web Development</li>
+              <li>Computer Graphics</li>
+              <li>Operating Systems</li>
+              <li>Networking</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Academic Highlights</h4>
+            <ul class="check-list">
+              <li>Consistently maintaining strong academic performance</li>
+              <li>Active participation in academic projects</li>
+              <li>Strong interest in human-centered design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="eyebrow reveal">// Skills</div>
+    <h2 class="section-title reveal">What I work with</h2>
+    <p class="section-sub reveal">A practical, honest snapshot of my current technical and soft skills.</p>
+    <div class="skills-grid">
+      <div class="glass skill-panel reveal">
+        <h3>Technical Skills</h3>
+        <div class="skill-bars">
+          <div class="skill-row"><div class="label"><span>HTML5</span></div><div class="skill-track"><div class="skill-fill" data-level="90"></div></div></div>
+          <div class="skill-row"><div class="label"><span>CSS3</span></div><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+          <div class="skill-row"><div class="label"><span>JavaScript</span></div><div class="skill-track"><div class="skill-fill" data-level="75"></div></div></div>
+          <div class="skill-row"><div class="label"><span>Java</span></div><div class="skill-track"><div class="skill-fill" data-level="78"></div></div></div>
+          <div class="skill-row"><div class="label"><span>C#</span></div><div class="skill-track"><div class="skill-fill" data-level="72"></div></div></div>
+          <div class="skill-row"><div class="label"><span>SQL</span></div><div class="skill-track"><div class="skill-fill" data-level="70"></div></div></div>
+          <div class="skill-row"><div class="label"><span>Figma</span></div><div class="skill-track"><div class="skill-fill" data-level="82"></div></div></div>
+          <div class="skill-row"><div class="label"><span>Git &amp; GitHub</span></div><div class="skill-track"><div class="skill-fill" data-level="76"></div></div></div>
+        </div>
+      </div>
+      <div class="glass skill-panel reveal">
+        <h3>Soft Skills</h3>
+        <div class="soft-cloud">
+          <span class="soft-chip">Communication</span>
+          <span class="soft-chip">Leadership</span>
+          <span class="soft-chip">Problem Solving</span>
+          <span class="soft-chip">Teamwork</span>
+          <span class="soft-chip">Time Management</span>
+          <span class="soft-chip">Adaptability</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 </body>
