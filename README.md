@@ -244,4 +244,33 @@ visibility) — no functional requirements yet, as no sections exist to navigate
 - [ ] Week 2, Day 7: CV asset added, content complete
 - [ ] Week 3: Test, deploy, finalize SAD report
 
+## 20. Implementation — Day 4: Projects & Experience/Activities Sections
+
+**What was built:**
+- Three project cards (UI/UX Design, Java-Based Academic Systems, C# Systems
+  Development), each with problem, contribution, tools and a custom inline SVG
+  illustration in place of screenshots
+- Experience & Activities: four-card grid covering Leadership, Academic & Professional
+  Development, Sports, and Volunteering
+
+**Requirements addressed:**
+- FR4 — at least three projects displayed with problem, contribution and tools
+- FR6 — experience information now complete alongside Day 3's education/skills
+
+**Commit:** `553c507` — *feat: projects and experience & activities sections*
+
+## 21. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [x] Week 2, Day 1: Project scaffold, design tokens and base styles
+- [x] Week 2, Day 2: Navigation bar and hero section
+- [x] Week 2, Day 3: About, Education and Skills sections
+- [x] Week 2, Day 4: Projects and Experience & Activities sections
+- [ ] Week 2, Day 5: CV and Contact sections, footer
+- [ ] Week 2, Day 6: Animations and interactivity
+- [ ] Week 2, Day 7: CV asset added, content complete
+- [ ] Week 3: Test, deploy, finalize SAD report
+
 *This README will be updated as the project progresses through each SAD stage.*
