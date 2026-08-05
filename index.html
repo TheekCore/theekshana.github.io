@@ -583,6 +583,84 @@ header{
   transform:translateY(-3px) rotate(-1deg);
 }
 
+/* ============ PROJECTS ============ */
+.projects-list{display:flex; flex-direction:column; gap:1.8rem;}
+.project-card{
+  display:grid;
+  grid-template-columns:0.85fr 1.15fr;
+  gap:0;
+  overflow:hidden;
+}
+.project-visual{
+  position:relative;
+  min-height:220px;
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+.project-visual .num{
+  position:absolute;
+  top:1.2rem; left:1.4rem;
+  font-family:var(--font-mono);
+  font-size:0.8rem;
+  color:rgba(255,255,255,0.55);
+  letter-spacing:0.05em;
+}
+.project-visual svg{width:58%; height:58%; position:relative; z-index:1;}
+.pv-1{background:linear-gradient(155deg, rgba(124,108,246,0.35), rgba(7,11,20,0));}
+.pv-2{background:linear-gradient(155deg, rgba(53,208,232,0.3), rgba(7,11,20,0));}
+.pv-3{background:linear-gradient(155deg, rgba(255,180,84,0.28), rgba(7,11,20,0));}
+.project-body{padding:2.2rem 2.4rem;}
+.project-body h3{font-size:1.35rem; margin-bottom:1rem;}
+.project-meta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.2rem;
+  margin-bottom:1.2rem;
+}
+.project-meta h4{
+  font-family:var(--font-mono);
+  font-size:0.7rem;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--text-2);
+  margin-bottom:0.4rem;
+}
+.project-meta p{color:var(--text-1); font-size:0.92rem;}
+.tool-tags{display:flex; flex-wrap:wrap; gap:0.5rem;}
+.tool-tag{
+  font-family:var(--font-mono);
+  font-size:0.72rem;
+  padding:0.3rem 0.7rem;
+  border-radius:6px;
+  background:rgba(255,255,255,0.06);
+  color:var(--text-1);
+}
+@media (max-width:760px){
+  .project-card{grid-template-columns:1fr;}
+  .project-visual{min-height:160px;}
+}
+
+/* ============ EXPERIENCE ============ */
+.exp-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:1.4rem;
+}
+.exp-card{padding:1.8rem;}
+.exp-card .icon{
+  width:42px; height:42px;
+  border-radius:12px;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(124,108,246,0.15);
+  margin-bottom:1.2rem;
+}
+.exp-card .icon svg{width:20px; height:20px; stroke:var(--cyan);}
+.exp-card h4{font-size:0.95rem; color:#fff; margin-bottom:0.7rem;}
+.exp-card ul li{color:var(--text-1); font-size:0.86rem; margin-bottom:0.4rem; padding-left:1rem; position:relative;}
+.exp-card ul li::before{content:'—'; position:absolute; left:0; color:var(--text-2);}
+@media (max-width:900px){.exp-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:560px){.exp-grid{grid-template-columns:1fr;}}
+
 </style>
 </head>
 <body>
@@ -751,6 +829,125 @@ header{
           <span class="soft-chip">Time Management</span>
           <span class="soft-chip">Adaptability</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="eyebrow reveal">// Projects</div>
+    <h2 class="section-title reveal">Selected work</h2>
+    <p class="section-sub reveal">Three projects that show how I approach problems — from interface to implementation.</p>
+    <div class="projects-list">
+
+      <div class="glass glass-hover project-card reveal">
+        <div class="project-visual pv-1">
+          <span class="num">01</span>
+          <svg viewBox="0 0 200 200" fill="none">
+            <rect x="30" y="30" width="140" height="140" rx="16" stroke="var(--violet-soft)" stroke-width="2" opacity="0.6"/>
+            <rect x="50" y="55" width="100" height="14" rx="7" fill="var(--violet-soft)" opacity="0.7"/>
+            <rect x="50" y="80" width="70" height="10" rx="5" fill="#fff" opacity="0.25"/>
+            <circle cx="65" cy="120" r="14" stroke="var(--cyan)" stroke-width="2"/>
+            <rect x="90" y="112" width="60" height="16" rx="8" fill="var(--cyan)" opacity="0.5"/>
+            <rect x="50" y="145" width="100" height="10" rx="5" fill="#fff" opacity="0.15"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>UI/UX Design Projects</h3>
+          <div class="project-meta">
+            <div><h4>Problem</h4><p>Creating intuitive interfaces that improve user interaction and usability.</p></div>
+            <div><h4>Contribution</h4><p>Designed wireframes, prototypes, user flows, and visual layouts.</p></div>
+          </div>
+          <div class="tool-tags"><span class="tool-tag">Figma</span><span class="tool-tag">Canva</span></div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card reveal">
+        <div class="project-visual pv-2">
+          <span class="num">02</span>
+          <svg viewBox="0 0 200 200" fill="none">
+            <rect x="35" y="40" width="130" height="120" rx="10" stroke="var(--cyan)" stroke-width="2" opacity="0.6"/>
+            <rect x="35" y="40" width="130" height="22" rx="10" fill="var(--cyan)" opacity="0.35"/>
+            <circle cx="48" cy="51" r="4" fill="#fff" opacity="0.6"/>
+            <circle cx="60" cy="51" r="4" fill="#fff" opacity="0.4"/>
+            <path d="M55 100 L75 120 L55 140" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            <rect x="90" y="130" width="55" height="6" rx="3" fill="#fff" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>Java-Based Academic Systems</h3>
+          <div class="project-meta">
+            <div><h4>Problem</h4><p>Developing software solutions to automate and simplify common academic tasks.</p></div>
+            <div><h4>Contribution</h4><p>Implemented application logic, user interfaces, and testing.</p></div>
+          </div>
+          <div class="tool-tags"><span class="tool-tag">Java</span><span class="tool-tag">NetBeans</span><span class="tool-tag">MySQL</span></div>
+        </div>
+      </div>
+
+      <div class="glass glass-hover project-card reveal">
+        <div class="project-visual pv-3">
+          <span class="num">03</span>
+          <svg viewBox="0 0 200 200" fill="none">
+            <rect x="30" y="35" width="140" height="100" rx="10" stroke="var(--amber)" stroke-width="2" opacity="0.6"/>
+            <rect x="45" y="52" width="45" height="12" rx="3" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+            <rect x="100" y="52" width="45" height="12" rx="3" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+            <rect x="45" y="75" width="100" height="12" rx="3" fill="var(--amber)" opacity="0.4"/>
+            <rect x="45" y="98" width="60" height="18" rx="9" fill="var(--amber)" opacity="0.6"/>
+            <rect x="60" y="150" width="80" height="8" rx="4" fill="#fff" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3>C# Systems Development</h3>
+          <div class="project-meta">
+            <div><h4>Problem</h4><p>Creating desktop-based applications for academic learning purposes.</p></div>
+            <div><h4>Contribution</h4><p>Designed forms, implemented functionality, and managed data operations.</p></div>
+          </div>
+          <div class="tool-tags"><span class="tool-tag">C#</span><span class="tool-tag">Visual Studio</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="eyebrow reveal">// Experience &amp; Activities</div>
+    <h2 class="section-title reveal">Beyond the classroom</h2>
+    <p class="section-sub reveal">Leadership, growth, sport and community — the parts of university life that shape how I work with others.</p>
+    <div class="exp-grid">
+      <div class="glass glass-hover exp-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z" stroke-linejoin="round"/></svg></div>
+        <h4>Leadership</h4>
+        <ul>
+          <li>Active member of TechMeetup</li>
+          <li>Active member of Leo Club</li>
+        </ul>
+      </div>
+      <div class="glass glass-hover exp-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 19V6a2 2 0 012-2h9l5 5v10a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M13 4v5h5"/></svg></div>
+        <h4>Academic &amp; Professional Development</h4>
+        <ul>
+          <li>Participated in various university technology activities</li>
+          <li>Consistently maintaining strong GPA performance</li>
+        </ul>
+      </div>
+      <div class="glass glass-hover exp-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+        <h4>Sports</h4>
+        <ul>
+          <li>University table tennis player</li>
+        </ul>
+      </div>
+      <div class="glass glass-hover exp-card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M17 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 20v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h4>Volunteering</h4>
+        <ul>
+          <li>Community and university engagement activities</li>
+        </ul>
       </div>
     </div>
   </div>
