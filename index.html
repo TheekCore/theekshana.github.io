@@ -1057,5 +1057,128 @@ footer{
   © 2026 Theekshana Thathsara — built with HTML, CSS &amp; JavaScript.
 </footer>
 
+<script>
+/* ===== Mobile menu ===== */
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+});
+document.querySelectorAll('.mobile-menu a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', false);
+  });
+});
+
+/* ===== Typing effect ===== */
+const roles = ['UI/UX Enthusiast', 'Aspiring Full-Stack Developer', 'BICT (Hons) Undergraduate'];
+const typedEl = document.getElementById('typed');
+let ri = 0, ci = 0, deleting = false;
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function typeLoop(){
+  const word = roles[ri];
+  if(prefersReduced){ typedEl.textContent = roles[0]; return; }
+  if(!deleting){
+    ci++;
+    typedEl.textContent = word.slice(0, ci);
+    if(ci === word.length){ deleting = true; setTimeout(typeLoop, 1400); return; }
+  } else {
+    ci--;
+    typedEl.textContent = word.slice(0, ci);
+    if(ci === 0){ deleting = false; ri = (ri + 1) % roles.length; }
+  }
+  setTimeout(typeLoop, deleting ? 45 : 85);
+}
+typeLoop();
+
+/* ===== Scroll reveal ===== */
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+/* ===== Skill bar fill on view ===== */
+const fills = document.querySelectorAll('.skill-fill');
+const fio = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.style.width = e.target.dataset.level + '%';
+      fio.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+fills.forEach(f => fio.observe(f));
+
+/* ===== Particle background ===== */
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let particles = [];
+function resizeCanvas(){
+  canvas.width = window.innerWidth;
+  canvas.height = document.documentElement.scrollHeight;
+}
+function initParticles(){
+  particles = [];
+  const count = Math.min(70, Math.floor(window.innerWidth / 22));
+  for(let i=0;i<count;i++){
+    particles.push({
+      x: Math.random()*canvas.width,
+      y: Math.random()*canvas.height,
+      r: Math.random()*1.6 + 0.4,
+      vy: Math.random()*0.25 + 0.05,
+      vx: (Math.random()-0.5)*0.15,
+      a: Math.random()*0.4 + 0.1
+    });
+  }
+}
+function drawParticles(){
+  ctx.clearRect(0,0,canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(180,190,255,${p.a})`;
+    ctx.fill();
+    p.y -= p.vy;
+    p.x += p.vx;
+    if(p.y < -10){ p.y = canvas.height + 10; p.x = Math.random()*canvas.width; }
+  });
+  if(!prefersReduced){ requestAnimationFrame(drawParticles); }
+}
+if(!prefersReduced){
+  resizeCanvas();
+  initParticles();
+  drawParticles();
+  window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+} else {
+  canvas.style.display = 'none';
+}
+
+/* ===== Active nav link on scroll (subtle UX touch) ===== */
+const sections = document.querySelectorAll('main section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a, .mobile-menu a');
+const navIo = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      const id = entry.target.getAttribute('id');
+      navAnchors.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + id ? '#fff' : '';
+      });
+    }
+  });
+}, { threshold: 0.5 });
+sections.forEach(s => navIo.observe(s));
+</script>
+
 </body>
 </html>
