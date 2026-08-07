@@ -273,4 +273,32 @@ visibility) — no functional requirements yet, as no sections exist to navigate
 - [ ] Week 2, Day 7: CV asset added, content complete
 - [ ] Week 3: Test, deploy, finalize SAD report
 
+## 22. Implementation — Day 5: CV & Contact Sections, Footer
+
+**What was built:**
+- CV section: glass call-to-action card linking to a downloadable PDF
+- Contact & Links: four cards for email, GitHub, LinkedIn and location
+- Footer credit line
+- All eight required content sections are now present in the markup (no motion/JS yet)
+
+**Requirements addressed:**
+- FR3 — CV section in place and wired to a download link (asset lands Day 7)
+- FR5 — working links to LinkedIn and GitHub
+
+**Commit:** `9f595a4` — *feat: CV, contact sections and footer*
+
+## 23. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [x] Week 2, Day 1: Project scaffold, design tokens and base styles
+- [x] Week 2, Day 2: Navigation bar and hero section
+- [x] Week 2, Day 3: About, Education and Skills sections
+- [x] Week 2, Day 4: Projects and Experience & Activities sections
+- [x] Week 2, Day 5: CV and Contact sections, footer
+- [ ] Week 2, Day 6: Animations and interactivity
+- [ ] Week 2, Day 7: CV asset added, content complete
+- [ ] Week 3: Test, deploy, finalize SAD report
+
 *This README will be updated as the project progresses through each SAD stage.*
