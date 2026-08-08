@@ -332,4 +332,31 @@ visibility) — no functional requirements yet, as no sections exist to navigate
 - [ ] Week 2, Day 7: CV asset added, content complete
 - [ ] Week 3: Test, deploy, finalize SAD report
 
+## 26. Implementation — Day 7: CV Asset & Content Complete
+
+**What was built:**
+- Starter CV PDF added under `assets/cv/`, downloadable from the CV section
+- Full pass to confirm every planned section, link and asset is present and working
+
+**Requirements addressed:**
+- FR3 — CV can now be viewed/downloaded end-to-end (link + actual file)
+- All functional requirements (FR1–FR6) are now implemented; Week 2 build phase complete
+
+**Commit:** `9d40db3` — *chore: add starter CV asset*
+
+## 27. Roadmap (updated)
+
+- [x] Week 1, Day 1: Problem statement, objectives, stakeholders, scope, constraints, requirements
+- [x] Week 1, Day 4–5: Use-case diagram + descriptions, activity diagram
+- [x] Week 1, Day 6: Site map & wireframes (Figma high-fidelity design)
+- [x] Week 2, Day 1: Project scaffold, design tokens and base styles
+- [x] Week 2, Day 2: Navigation bar and hero section
+- [x] Week 2, Day 3: About, Education and Skills sections
+- [x] Week 2, Day 4: Projects and Experience & Activities sections
+- [x] Week 2, Day 5: CV and Contact sections, footer
+- [x] Week 2, Day 6: Animations and interactivity
+- [x] Week 2, Day 7: CV asset added, content complete
+- [ ] Week 3: Test, deploy, finalize SAD report
+
+*This README will be updated as the project progresses through each SAD stage.*
 *This README will be updated as the project progresses through each SAD stage.*
