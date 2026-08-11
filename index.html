@@ -627,6 +627,27 @@ header{
 }
 .project-meta p{color:var(--text-1); font-size:0.92rem;}
 .tool-tags{display:flex; flex-wrap:wrap; gap:0.5rem;}
+/* See more bttn */
+.project-link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  margin-top:1rem;
+  font-family:var(--font-mono);
+  font-size:0.82rem;
+  color:var(--cyan);
+  transition:gap .25s ease, color .25s ease;
+}
+.project-link:hover{
+  gap:0.65rem;
+  color:var(--violet-soft);
+}
+.project-link svg{
+  width:14px; height:14px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2;
+}
 .tool-tag{
   font-family:var(--font-mono);
   font-size:0.72rem;
@@ -922,30 +943,46 @@ footer{
             <div><h4>Contribution</h4><p>Designed wireframes, prototypes, user flows, and visual layouts.</p></div>
           </div>
           <div class="tool-tags"><span class="tool-tag">Figma</span><span class="tool-tag">Canva</span></div>
+                    <a class="project-link" href="assets/projects/project1-doc.pdf" target="_blank" rel="noopener">
+                      See more
+                      <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+                    </a>
         </div>
       </div>
-
 
 
       <div class="glass glass-hover project-card reveal">
         <div class="project-visual pv-2">
           <span class="num">02</span>
-          <svg viewBox="0 0 200 200" fill="none">
+            <div class="project-visual pv-1">
+             <span class="num">01</span>
+            <img src="C:\SAD-Portfolio\assets\projects\RiderXpimg.png" alt="Screenshot of [project name]" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+
+
+         <!-- <svg viewBox="0 0 200 200" fill="none">
             <rect x="35" y="40" width="130" height="120" rx="10" stroke="var(--cyan)" stroke-width="2" opacity="0.6"/>
             <rect x="35" y="40" width="130" height="22" rx="10" fill="var(--cyan)" opacity="0.35"/>
             <circle cx="48" cy="51" r="4" fill="#fff" opacity="0.6"/>
             <circle cx="60" cy="51" r="4" fill="#fff" opacity="0.4"/>
             <path d="M55 100 L75 120 L55 140" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
             <rect x="90" y="130" width="55" height="6" rx="3" fill="#fff" opacity="0.4"/>
-          </svg>
+          </svg> -->
         </div>
         <div class="project-body">
-          <h3>Java-Based Academic Systems</h3>
+          <h3>RiderXP-Expense Tracker For Riders</h3>
           <div class="project-meta">
-            <div><h4>Problem</h4><p>Developing software solutions to automate and simplify common academic tasks.</p></div>
+            <div><h4>Problem</h4><p>Developing software solutions to automate daily expense tracking for riders.</p></div>
             <div><h4>Contribution</h4><p>Implemented application logic, user interfaces, and testing.</p></div>
           </div>
           <div class="tool-tags"><span class="tool-tag">Java</span><span class="tool-tag">NetBeans</span><span class="tool-tag">MySQL</span></div>
+          
+          
+              <a class="project-link" href="http://localhost:8080/" target="_blank" rel="noopener">
+               See more
+               <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+              </a>
+                  
         </div>
       </div>
 
@@ -973,6 +1010,11 @@ footer{
             <div><h4>Contribution</h4><p>Designed forms, implemented functionality, and managed data operations.</p></div>
           </div>
           <div class="tool-tags"><span class="tool-tag">C#</span><span class="tool-tag">Visual Studio</span></div>
+          <a class="project-link" href="C:\SAD-Portfolio\assets\projects\Clinic AppoimentCSharp.pdf" target="_blank" rel="noopener">
+                  See more
+                  <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+                 </a>
+
         </div>
       </div>
 
